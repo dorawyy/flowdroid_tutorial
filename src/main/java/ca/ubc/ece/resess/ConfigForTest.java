@@ -48,6 +48,8 @@ public class ConfigForTest implements IInfoflowConfig {
 		Options.v().set_allow_phantom_refs(true);
 		options.set_include(includeList);
 		options.set_output_format(Options.output_format_none);
+		// options.set_src_prec(1); // "1" tells Flowdroid to accepts classes  
+		// options.set_src_prec(3); // "3" tells Flowdroid to accepts Jimple 
 		Options.v().setPhaseOption("jb", "use-original-names:true");
 		// Options.v().setPhaseOption("cg.spark", "string-constants:true");
 		Options.v().set_ignore_classpath_errors(true);
